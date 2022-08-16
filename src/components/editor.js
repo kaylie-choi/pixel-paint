@@ -6,12 +6,17 @@ import DrawingPanel from "./drawing-panel";
 
 export default function Editor() {
   // state properties
-  const [panelWidth, setPanelWidth] = useState(16) //setting 16x16 as default values for width / heights
+  //setting 16x16 as default values for width / heights
+  const [panelWidth, setPanelWidth] = useState(16) 
   const [panelHeight, setPanelHeight] = useState(16)
-  const [hideOptions, setHideOptions] = useState(false) //hiding / showing panel dimension options
-  const [hideDrawingPanel, setHideDrawingPanel] = useState(true) //hiding / showing drawing panel area
-  const [buttonText, setButtonText] = useState("start drawing") //control button text (start drawing/reset)
-  const [selectedColor, setColor] = useState("#f44336") // setting default value for the color picker
+  //hiding / showing panel dimension options
+  const [hideOptions, setHideOptions] = useState(false) 
+  //hiding / showing drawing panel area
+  const [hideDrawingPanel, setHideDrawingPanel] = useState(true) 
+  //control button text (start drawing/reset)
+  const [buttonText, setButtonText] = useState("start drawing") 
+  // setting default value for the color picker little circles
+  const [selectedColor, setColor] = useState("#f44336") 
 
   function initDrawingPanel() {
     setHideOptions(!hideOptions);
@@ -67,16 +72,18 @@ export default function Editor() {
       </button>
 
       {/* color picker only appears when options are hidden */}
-      {/* !!!! TODO: choose a different color selector https://casesandberg.github.io/react-color/ */}
+      {/* !!!! TODO: choose a different color selector and palette https://casesandberg.github.io/react-color/ */}
       {hideOptions && (
         <CirclePicker color={selectedColor} onChangeComplete={changeColor}/>
       )}
 
-      <DrawingPanel
-        width = {setPanelWidth}
-        height = {setPanelHeight}
-        selectedColor = {selectedColor}
-      />
+      {hideOptions && (
+        <DrawingPanel
+          width = {panelWidth}
+          height = {panelHeight}
+          selectedColor = {selectedColor}
+        />
+      )}
 
     </div>
   )

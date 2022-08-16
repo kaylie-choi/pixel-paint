@@ -1,7 +1,8 @@
+import React from 'react';
 import "../styles/app.scss"
 import Editor from "./editor"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
        <Editor />
@@ -9,4 +10,3 @@ function App() {
   );
 }
 
-export default App;
