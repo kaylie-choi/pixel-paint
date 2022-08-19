@@ -39,7 +39,7 @@ export default function DrawingPanel(props) {
         <button 
           onClick={() => exportComponentAsJPEG(panelRef)}
           className='export-button'>
-            export as jpef
+            export as jpeg
         </button> <button 
           onClick={() => exportComponentAsPDF(panelRef)}
           className='export-button'>
