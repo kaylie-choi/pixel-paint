@@ -2,7 +2,7 @@
   "name": "pixel-paint",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kaylie-choi.github.io",
+  "homepage": "https://kaylie-choi.github.io/pixel-paint",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
