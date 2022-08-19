@@ -2,8 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-#pixels {
-  margin-bottom: 2rem;
+  #pixels {
+    border: 1rem solid #808080;
+    box-shadow: 1px 1px #fff;
+    margin-bottom: 1rem;
+  }
+
+  .export-buttons {
+    display: flex;
+
+    .export-button {
+      flex-direction: row;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      border-radius: 0;
+      font-family: 'VT323', monospace;
+      cursor: pointer;
+    }
+  }
 }

@@ -46,7 +46,6 @@ export default function Pixel(props) {
       onMouseLeave={resetColor}
       style={{ backgroundColor: pixelColor }}
     >
-      
     </div>
   )
 }
