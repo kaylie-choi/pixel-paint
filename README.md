@@ -5,8 +5,7 @@ Features a dynamically generated pixel grid drawing area, custom colour picker, 
 
 - design inspired by artist @16pxl's [tweet](https://twitter.com/16pxl/status/1557770309184339968?s=20&t=QFozraT938zRCZ5Kdlo2Ng)
 
-<img width="1116" alt="pixel-paint" src="https://user-images.githubusercontent.com/38885193/187777099-5eb451bc-3fb1-48e8-a13c-b1664d4d5aea.png">
-
+<img width="1064" alt="pixel-paint" src="https://user-images.githubusercontent.com/38885193/193166991-b3d12211-c16b-4307-b090-a07177691cf2.png">
 
 <!-- ### scripts
 
